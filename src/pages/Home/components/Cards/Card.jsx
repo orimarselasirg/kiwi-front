@@ -16,10 +16,8 @@ import { useDispatch } from 'react-redux'
 import {
   FaPause,
   FaPlay,
-  FaRedoAlt,
   FaHistory,
-  FaEdit,
-  FaTimes
+  FaEdit
 } from 'react-icons/fa'
 import { EditFinish } from '../EditFinish'
 import { removeService, updateService } from '../../../../redux'

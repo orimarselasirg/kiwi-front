@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import io from 'socket.io-client'
 import { Flex, Container } from '@chakra-ui/react'
@@ -6,7 +6,8 @@ import { Cards } from './components'
 import { addService } from '../../redux'
 import Formcard from './components/Form/Form.home'
 import './home.css'
-const socket = io('http://localhost:8080')
+const { REACT_APP_API } = process.env
+const socket = io(REACT_APP_API)
 
 function Home() {
   const dispatch = useDispatch()

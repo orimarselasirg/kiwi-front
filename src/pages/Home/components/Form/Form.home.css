@@ -1,0 +1,13 @@
+.BotonHover:hover {
+    background-color: #F88319;
+}
+
+.fail {
+    color: #F2317f
+}
+
+input::-webkit-input-placeholder{
+    color:black;
+}
+
+

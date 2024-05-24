@@ -1,0 +1,8 @@
+.formContainer{
+        display: flex;
+        flex-direction: row;
+        height: inherit;
+        align-items: baseline;
+        flex-wrap: wrap;
+        border-color: 1px solid red;
+}

@@ -11,7 +11,7 @@ const initialState = {
 
 function Form() {
   // const [match, params] = useRoute('/auth/new-password/:token')
-  const [params] = useRoute('/auth/new-password/:token')
+  const [match, params] = useRoute('/auth/new-password/:token')
   // const { msg, type } = useSelector((state) => state.auth.status)
   const [values, setValues] = useState(initialState)
   const [isWrong, setIsWrong] = useState(false)

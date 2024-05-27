@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { saveState, loadState } from 'utilities/localStorage'
+import { loadState } from 'utilities/localStorage'
 import { forgotPassword, resetPassword, signIn, signUp } from './thunk'
 import { toast } from 'react-toastify'
 

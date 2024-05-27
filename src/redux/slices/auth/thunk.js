@@ -1,6 +1,7 @@
 import { api } from 'services/api.services'
 
 import { createAsyncThunk } from '@reduxjs/toolkit'
+import { saveState } from 'utilities'
 
 export const signIn = createAsyncThunk(
   'auth/signIn',
@@ -8,6 +9,8 @@ export const signIn = createAsyncThunk(
     try {
       const { email, password } = user
       const { data } = await api.post('/auth/login/', { email, password })
+      saveState('user', data)
+      localStorage.setItem('token', JSON.stringify(data.token))
       return { role: data.role, username: data.name, token: data.token }
     } catch (err) {
       return rejectWithValue('La contraseña o el email no coinciden')

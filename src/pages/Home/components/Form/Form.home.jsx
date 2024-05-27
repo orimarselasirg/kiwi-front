@@ -36,6 +36,7 @@ function Formcard({ addServiceEmit, socket, allServices, setAllServices }) {
     getValues,
     reset
   } = useForm()
+
   useEffect(() => {
     dispatch(getStations())
     dispatch(getTeches())

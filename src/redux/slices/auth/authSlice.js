@@ -18,7 +18,7 @@ export const authSlice = createSlice({
     builder.addCase(signIn.fulfilled, (state, action) => {
       state.status = 'success'
       state.token = action.payload.token
-      saveState('user', action.payload)
+      // saveState('user', action.payload)
       toast.success('Sesión iniciada con éxito')
     })
     builder.addCase(signIn.rejected, (state, action) => {

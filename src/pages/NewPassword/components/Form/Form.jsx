@@ -16,6 +16,7 @@ function Form() {
   const [values, setValues] = useState(initialState)
   const [isWrong, setIsWrong] = useState(false)
   const dispatch = useDispatch()
+  console.log('match', match)
 
   const { password, confirmPassword } = values
 

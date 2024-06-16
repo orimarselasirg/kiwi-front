@@ -26,7 +26,7 @@ exec(gitAdd, (err, stdout, stderr) => {
         console.error(`hubo un error en el push ${stderr}`)
         return
       }
-      console.log(`Push ejeutado correctamente a la rama ${gitBranch} ${stdout}`)
+      console.log(`Push ejeutado correctamente a la rama ddd ${gitBranch} ${stdout}`)
     })
   })
 })

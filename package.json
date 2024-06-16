@@ -44,7 +44,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint --fix --ext .js,.jsx .",
     "format": "prettier -w .",
-    "co": "sui-mono commit"
+    "co": "sui-mono commit",
+    "gc": "node ./commitsScript.js"
   },
   "eslintConfig": {
     "extends": [
